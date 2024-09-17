@@ -12,7 +12,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git ''
+        git 'https://github.com/dpuja123/node-apptest.git'
       }
     }
 
@@ -26,7 +26,7 @@ pipeline {
 
     stage('Pushing Image') {
       environment {
-        registryCredential = 'PUJAREPO'
+        registryCredential = 'PUJAREPO1'
       }
       steps{
         script {
