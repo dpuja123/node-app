@@ -12,7 +12,7 @@ pipeline {
 
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/Putumerta-collab/nodeapp_test.git'
+        git ''
       }
     }
 
